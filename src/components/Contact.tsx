@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, Github, Send } from "lucide-react";
+import { Mail, Linkedin, Github, Send, Instagram } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -17,7 +17,10 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
+    // Simulate form submission and email to varunpurwar9@gmail.com
+    const mailtoLink = `mailto:varunpurwar9@gmail.com?subject=Portfolio Contact: ${formData.name}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+    window.open(mailtoLink, '_blank');
+    
     toast({
       title: "Message sent!",
       description: "Thank you for your message. I'll get back to you soon.",
@@ -36,8 +39,8 @@ const Contact = () => {
     {
       name: "Email",
       icon: Mail,
-      href: "mailto:purwar.1@iitj.ac.in",
-      handle: "purwar.1@iitj.ac.in"
+      href: "mailto:varunpurwar9@gmail.com",
+      handle: "varunpurwar9@gmail.com"
     },
     {
       name: "LinkedIn",
@@ -50,6 +53,12 @@ const Contact = () => {
       icon: Github,
       href: "https://github.com/varun-purwar28",
       handle: "/varun-purwar28"
+    },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      href: "https://www.instagram.com/varun_purwar_28?igsh=M3p2c2Jkem03YWh3",
+      handle: "@varun_purwar_28"
     }
   ];
 

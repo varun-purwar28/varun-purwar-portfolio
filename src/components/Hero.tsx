@@ -38,7 +38,7 @@ const Hero = () => {
           >
             Hi, I'm{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Varun
+              Varun Purwar
             </span>
           </motion.h1>
           
@@ -48,7 +48,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            B.Tech AI & Data Science student at IIT Jodhpur, transforming data into actionable insights
+            B.Tech AI & Data Science graduate from IIT Jodhpur, transforming data into actionable insights
           </motion.p>
           
           <motion.div 
@@ -69,7 +69,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full backdrop-blur-sm"
+              className="border-white/50 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full backdrop-blur-sm"
               asChild
             >
               <a href="https://drive.google.com/file/d/17hnEeirmqv9e7-wfNRcbuSPVEwpysrPW/view" target="_blank" rel="noopener noreferrer">

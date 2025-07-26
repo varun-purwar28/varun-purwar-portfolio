@@ -14,7 +14,7 @@ const Projects = () => {
       image: project1Image,
       technologies: ["Python", "Deep Learning", "Computer Vision", "NLP"],
       github: "https://github.com/varun-purwar28",
-      demo: "https://colab.research.google.com/drive/1FBxu9cMbdWIHKTG7Vp7aICuGvJAUi5ZA"
+      demo: "https://docs.google.com/document/d/1OTDnJBxFwmkkEHuvdMHdSFnI4ypqCv4ptWZwdWhO3q8/edit?tab=t.0"
     },
     {
       title: "House Price Prediction",
@@ -62,6 +62,7 @@ const Projects = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
               className="group"
+              whileHover={{ scale: 1.03 }}
             >
               <Card className="h-full hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 overflow-hidden">
                 <div className="relative overflow-hidden">
@@ -114,7 +115,7 @@ const Projects = () => {
                     >
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
+                        {project.title.includes("Sanskrit") ? "Report" : "Demo"}
                       </a>
                     </Button>
                   </div>

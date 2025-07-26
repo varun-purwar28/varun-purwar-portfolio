@@ -13,6 +13,7 @@ const Navigation = () => {
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
     { name: "Activities", href: "#extracurricular" },
+    { name: "Support", href: "#support" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -52,7 +53,7 @@ const Navigation = () => {
             className="text-2xl font-bold"
           >
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Varun
+              Varun Purwar
             </span>
           </motion.div>
 
