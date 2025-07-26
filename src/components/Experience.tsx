@@ -5,51 +5,51 @@ import { Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Data Analyst",
-      company: "TechCorp Solutions",
-      location: "New York, NY",
-      duration: "Jan 2023 - Present",
+      title: "Data Scientist Intern",
+      company: "iHub Drishti",
+      location: "Jodhpur, India",
+      duration: "May 2024 - Jul 2024",
       description: [
-        "Led data-driven initiatives that increased operational efficiency by 25%",
-        "Developed and maintained 15+ Tableau dashboards for executive reporting",
-        "Collaborated with cross-functional teams to implement ML models in production",
-        "Mentored junior analysts and established best practices for data quality"
+        "Analyzed mouse wound data using statistical and computational techniques",
+        "Developed quantitative models to assess wound healing metrics",
+        "Processed large biomedical datasets ensuring accuracy in results",
+        "Applied data analysis skills to biomedical research applications"
       ]
     },
     {
-      title: "Data Analyst",
-      company: "StartupXYZ",
-      location: "San Francisco, CA",
-      duration: "Jun 2021 - Dec 2022",
+      title: "Head, Cultural Fest",
+      company: "IGNUS'24, IIT Jodhpur", 
+      location: "Jodhpur, India",
+      duration: "2024",
       description: [
-        "Built automated ETL pipelines processing 1M+ records daily",
-        "Performed A/B testing analysis resulting in 18% conversion rate improvement",
-        "Created predictive models for customer lifetime value estimation",
-        "Presented insights to stakeholders and influenced strategic decisions"
+        "Led the organization of IIT Jodhpur's premier cultural festival",
+        "Managed cross-functional teams and coordinated multiple events",
+        "Demonstrated leadership and project management skills",
+        "Enhanced organizational and communication abilities"
       ]
     },
     {
-      title: "Junior Data Analyst",
-      company: "DataInsights Inc",
-      location: "Austin, TX",
-      duration: "Aug 2020 - May 2021",
+      title: "Assistant Head, Sports Fest",
+      company: "VARCHAS'23, IIT Jodhpur",
+      location: "Jodhpur, India", 
+      duration: "2023",
       description: [
-        "Analyzed customer behavior patterns using SQL and Python",
-        "Supported senior analysts in developing machine learning models",
-        "Created data visualization reports for various departments",
-        "Participated in agile development processes and daily standups"
+        "Assisted in organizing IIT Jodhpur's annual sports festival",
+        "Coordinated logistics and managed participant activities",
+        "Developed teamwork and event management skills",
+        "Gained experience in large-scale event coordination"
       ]
     },
     {
-      title: "Data Science Intern",
-      company: "InnovateAI",
-      location: "Boston, MA",
-      duration: "May 2020 - Aug 2020",
+      title: "Assistant Head, Technical Fest",
+      company: "Prometeo'23, IIT Jodhpur",
+      location: "Jodhpur, India",
+      duration: "2023", 
       description: [
-        "Developed proof-of-concept ML models for fraud detection",
-        "Conducted exploratory data analysis on large financial datasets",
-        "Collaborated with data engineering team on pipeline optimization",
-        "Presented final project to executive leadership team"
+        "Helped organize IIT Jodhpur's technical and entrepreneurial festival",
+        "Managed technical competitions and workshops",
+        "Coordinated with industry professionals and speakers",
+        "Enhanced technical event management capabilities"
       ]
     }
   ];

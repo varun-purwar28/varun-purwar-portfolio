@@ -6,9 +6,9 @@ import { Download, Code, Database, BarChart3, Brain } from "lucide-react";
 const About = () => {
   const skills = [
     { name: "Python", icon: Code, level: "Expert" },
+    { name: "Machine Learning", icon: Brain, level: "Advanced" },
     { name: "SQL", icon: Database, level: "Advanced" },
-    { name: "Tableau", icon: BarChart3, level: "Advanced" },
-    { name: "Machine Learning", icon: Brain, level: "Intermediate" },
+    { name: "TensorFlow", icon: BarChart3, level: "Intermediate" },
   ];
 
   return (
@@ -35,19 +35,17 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-semibold text-foreground mb-6">
-              Passionate about turning data into stories
+              Passionate about AI and solving real-world problems
             </h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              With a strong background in data analysis and a growing expertise in AI, 
-              I specialize in uncovering patterns and insights from complex datasets. 
-              My journey in data science has led me to work on diverse projects ranging 
-              from business intelligence to machine learning applications.
+              Currently pursuing B.Tech in Artificial Intelligence and Data Science at IIT Jodhpur (2021-2025). 
+              I specialize in applying AI and Data Science skills to solve real-world problems through data-driven insights, 
+              machine learning, and automation.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              I'm passionate about using technology to solve real-world problems and 
-              help organizations make data-driven decisions. When I'm not analyzing data, 
-              you'll find me exploring the latest developments in artificial intelligence 
-              and contributing to open-source projects.
+              During my internship at iHub Drishti, I focused on analyzing biomedical data using statistical and computational techniques. 
+              I'm passionate about using technology to solve complex problems and contribute to meaningful research. 
+              When not coding, you'll find me leading cultural and technical fests at IIT Jodhpur.
             </p>
             
             <Button 

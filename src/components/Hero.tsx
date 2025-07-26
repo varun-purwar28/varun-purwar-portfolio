@@ -48,7 +48,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Data Analyst & AI Enthusiast transforming data into actionable insights
+            B.Tech AI & Data Science student at IIT Jodhpur, transforming data into actionable insights
           </motion.p>
           
           <motion.div 

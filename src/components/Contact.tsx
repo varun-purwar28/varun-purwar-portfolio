@@ -36,20 +36,20 @@ const Contact = () => {
     {
       name: "Email",
       icon: Mail,
-      href: "mailto:varun.purwar@email.com",
-      handle: "varun.purwar@email.com"
-    },
-    {
-      name: "LinkedIn",
-      icon: Linkedin,
-      href: "https://linkedin.com/in/varun-purwar",
-      handle: "/in/varun-purwar"
+      href: "mailto:purwar.1@iitj.ac.in",
+      handle: "purwar.1@iitj.ac.in"
     },
     {
       name: "GitHub",
       icon: Github,
-      href: "https://github.com/varun-purwar",
-      handle: "/varun-purwar"
+      href: "https://github.com/varun-purwar28",
+      handle: "/varun-purwar28"
+    },
+    {
+      name: "Kaggle",
+      icon: Linkedin,
+      href: "https://www.kaggle.com/varunpurwar28",
+      handle: "/varunpurwar28"
     }
   ];
 
@@ -146,8 +146,8 @@ const Contact = () => {
                 Let's Connect
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                I'm always open to discussing new opportunities, collaboration on interesting projects, 
-                or just having a conversation about data science and AI. Feel free to reach out through 
+                I'm always open to discussing new opportunities, collaboration on interesting AI/ML projects, 
+                or conversations about data science and artificial intelligence. Feel free to reach out through 
                 any of the channels below.
               </p>
             </div>

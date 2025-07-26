@@ -9,28 +9,28 @@ import project3Image from "@/assets/project3.jpg";
 const Projects = () => {
   const projects = [
     {
-      title: "Sales Analytics Dashboard",
-      description: "Interactive Tableau dashboard analyzing sales performance across multiple regions with real-time KPI tracking and predictive analytics.",
+      title: "Sanskrit Text Recognition & Translation",
+      description: "Unsupervised text recognition pipeline that accurately recognizes and translates Sanskrit text from images to English, addressing complex ancient document challenges.",
       image: project1Image,
-      technologies: ["Python", "Tableau", "SQL", "Pandas"],
-      github: "#",
-      demo: "#"
+      technologies: ["Python", "Deep Learning", "Computer Vision", "NLP"],
+      github: "https://github.com/varun-purwar28",
+      demo: "https://colab.research.google.com/drive/1FBxu9cMbdWIHKTG7Vp7aICuGvJAUi5ZA"
     },
     {
-      title: "Customer Churn Prediction",
-      description: "Machine learning model using Random Forest and XGBoost to predict customer churn with 94% accuracy, deployed using Flask API.",
+      title: "House Price Prediction",
+      description: "Machine learning model that predicts house prices using various parameters and historical data, helping businesses make accurate property value assessments.",
       image: project2Image,
-      technologies: ["Python", "Scikit-learn", "Flask", "AWS"],
-      github: "#",
-      demo: "#"
+      technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+      github: "https://github.com/varun-purwar28",
+      demo: "https://colab.research.google.com/drive/1ZiCmBbrFv5yEetPRrD9ZoY9vdKu-f6-r"
     },
     {
-      title: "E-commerce Data Pipeline",
-      description: "ETL pipeline processing 10M+ daily transactions, built with Apache Airflow and deployed on AWS with automated data quality checks.",
+      title: "Pulsar Star Prediction",
+      description: "Classification model using UCI data to predict whether a star is a neutron star or the rare Pulsar Star type, leveraging machine learning techniques.",
       image: project3Image,
-      technologies: ["Python", "Airflow", "PostgreSQL", "AWS"],
-      github: "#",
-      demo: "#"
+      technologies: ["Python", "Machine Learning", "UCI Data", "Classification"],
+      github: "https://github.com/varun-purwar28",
+      demo: "https://kaggle.com/varunpurwar28"
     }
   ];
 
