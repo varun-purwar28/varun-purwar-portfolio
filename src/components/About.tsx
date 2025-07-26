@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Code, Database, BarChart3, Brain } from "lucide-react";
-import profileImage from "@/assets/varun-profile.jpg";
+import profileImage from "@/assets/varun-profile-real.jpg";
 
 const About = () => {
   const skills = [
@@ -161,12 +161,11 @@ const About = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: "Machine Learning", issuer: "Stanford University", year: "2024" },
-              { name: "Deep Learning Specialization", issuer: "DeepLearning.AI", year: "2024" },
-              { name: "Python Programming", issuer: "University of Michigan", year: "2023" },
-              { name: "Data Science Professional", issuer: "IBM", year: "2023" },
-              { name: "TensorFlow Developer", issuer: "TensorFlow", year: "2024" },
-              { name: "AWS Machine Learning", issuer: "Amazon", year: "2024" }
+              { name: "AI TOOLS WORKSHOP", issuer: "Be10x", year: "Jun 2025", type: "Virtual" },
+              { name: "Deloitte Australia - Data Analytics Job Simulation", issuer: "Forage", year: "Jun 2025", type: "Virtual" },
+              { name: "Python GUI Programming Recipes Using PyQt5", issuer: "Infosys Springboard", year: "Jun 2023", type: "Virtual" },
+              { name: "Cryptography: Introduction To Cryptography Services", issuer: "Infosys Springboard", year: "Mar 2023", type: "Virtual" },
+              { name: "Data Science For Marketing Analytics", issuer: "Infosys Springboard", year: "Dec 2022", type: "Virtual" }
             ].map((cert, index) => (
               <motion.div
                 key={cert.name}
@@ -180,7 +179,10 @@ const About = () => {
                   <CardContent className="p-4">
                     <h4 className="font-semibold text-foreground text-sm">{cert.name}</h4>
                     <p className="text-xs text-muted-foreground">{cert.issuer}</p>
-                    <p className="text-xs text-primary font-medium">{cert.year}</p>
+                    <div className="flex justify-between items-center mt-1">
+                      <p className="text-xs text-primary font-medium">{cert.year}</p>
+                      <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">{cert.type}</span>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>

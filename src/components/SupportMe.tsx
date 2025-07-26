@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Copy, Heart, Coffee } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import upiQR from "@/assets/upi-qr.png";
+import upiQR from "@/assets/upi-qr-real.png";
 
 const SupportMe = () => {
   const { toast } = useToast();
