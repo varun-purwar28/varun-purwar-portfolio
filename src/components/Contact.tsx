@@ -40,16 +40,16 @@ const Contact = () => {
       handle: "purwar.1@iitj.ac.in"
     },
     {
+      name: "LinkedIn",
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/varun-purwar-39a384247/",
+      handle: "/in/varun-purwar-39a384247"
+    },
+    {
       name: "GitHub",
       icon: Github,
       href: "https://github.com/varun-purwar28",
       handle: "/varun-purwar28"
-    },
-    {
-      name: "Kaggle",
-      icon: Linkedin,
-      href: "https://www.kaggle.com/varunpurwar28",
-      handle: "/varunpurwar28"
     }
   ];
 

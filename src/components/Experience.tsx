@@ -15,42 +15,6 @@ const Experience = () => {
         "Processed large biomedical datasets ensuring accuracy in results",
         "Applied data analysis skills to biomedical research applications"
       ]
-    },
-    {
-      title: "Head, Cultural Fest",
-      company: "IGNUS'24, IIT Jodhpur", 
-      location: "Jodhpur, India",
-      duration: "2024",
-      description: [
-        "Led the organization of IIT Jodhpur's premier cultural festival",
-        "Managed cross-functional teams and coordinated multiple events",
-        "Demonstrated leadership and project management skills",
-        "Enhanced organizational and communication abilities"
-      ]
-    },
-    {
-      title: "Assistant Head, Sports Fest",
-      company: "VARCHAS'23, IIT Jodhpur",
-      location: "Jodhpur, India", 
-      duration: "2023",
-      description: [
-        "Assisted in organizing IIT Jodhpur's annual sports festival",
-        "Coordinated logistics and managed participant activities",
-        "Developed teamwork and event management skills",
-        "Gained experience in large-scale event coordination"
-      ]
-    },
-    {
-      title: "Assistant Head, Technical Fest",
-      company: "Prometeo'23, IIT Jodhpur",
-      location: "Jodhpur, India",
-      duration: "2023", 
-      description: [
-        "Helped organize IIT Jodhpur's technical and entrepreneurial festival",
-        "Managed technical competitions and workshops",
-        "Coordinated with industry professionals and speakers",
-        "Enhanced technical event management capabilities"
-      ]
     }
   ];
 

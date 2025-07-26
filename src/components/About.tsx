@@ -51,9 +51,12 @@ const About = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 shadow-elegant"
+              asChild
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
+              <a href="https://drive.google.com/file/d/17hnEeirmqv9e7-wfNRcbuSPVEwpysrPW/view" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-5 w-5" />
+                View Resume
+              </a>
             </Button>
           </motion.div>
 

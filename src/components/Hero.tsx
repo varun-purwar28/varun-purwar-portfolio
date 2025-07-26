@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Download } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import heroImage from "@/assets/hero-clean.jpg";
 
 const Hero = () => {
   const scrollToNext = () => {
@@ -70,9 +70,12 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full backdrop-blur-sm"
+              asChild
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
+              <a href="https://drive.google.com/file/d/17hnEeirmqv9e7-wfNRcbuSPVEwpysrPW/view" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-5 w-5" />
+                View Resume
+              </a>
             </Button>
           </motion.div>
         </motion.div>
