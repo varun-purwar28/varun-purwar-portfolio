@@ -7,9 +7,9 @@ import profileImage from "@/assets/varun-profile-final.jpg";
 const About = () => {
   const skills = [
     { name: "Python", icon: Code, level: "Expert" },
-    { name: "Machine Learning", icon: Brain, level: "Advanced" },
+    { name: "Machine Learning", icon: Brain, level: "Expert" },
     { name: "SQL", icon: Database, level: "Advanced" },
-    { name: "TensorFlow", icon: BarChart3, level: "Intermediate" },
+    { name: "Power BI", icon: "/icons/powerbi.svg", level: "Intermediate" },
   ];
 
   return (
