@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Calendar, MapPin, FileText } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
@@ -75,7 +76,7 @@ const Experience = () => {
                   </CardHeader>
                   
                   <CardContent>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 mb-6">
                       {experience.description.map((item, itemIndex) => (
                         <li key={itemIndex} className="flex items-start">
                           <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0" />
@@ -83,6 +84,18 @@ const Experience = () => {
                         </li>
                       ))}
                     </ul>
+                    
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="hover:bg-primary hover:text-primary-foreground"
+                      asChild
+                    >
+                      <a href="https://docs.google.com/document/d/1vKE20o3o7T4u0tSRvnLDkD5feW_GutM4EJiLvKlzlPM/edit?tab=t.0" target="_blank" rel="noopener noreferrer">
+                        <FileText className="mr-2 h-4 w-4" />
+                        View Intern Report
+                      </a>
+                    </Button>
                   </CardContent>
                 </Card>
               </motion.div>

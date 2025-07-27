@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Award } from "lucide-react";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,28 +58,49 @@ const Navigation = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="hidden md:flex space-x-8"
-          >
-            {navItems.map((item, index) => (
-              <motion.button
-                key={item.name}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-                onClick={() => scrollToSection(item.href)}
-                className={`relative text-sm font-medium transition-colors hover:text-primary ${
-                  isScrolled ? "text-foreground" : "text-white"
+          <div className="hidden md:flex items-center space-x-8">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex space-x-8"
+            >
+              {navItems.map((item, index) => (
+                <motion.button
+                  key={item.name}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
+                  onClick={() => scrollToSection(item.href)}
+                  className={`relative text-sm font-medium transition-colors hover:text-primary ${
+                    isScrolled ? "text-foreground" : "text-white"
+                  }`}
+                >
+                  {item.name}
+                  <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-primary scale-x-0 transition-transform hover:scale-x-100" />
+                </motion.button>
+              ))}
+            </motion.div>
+            
+            {/* Certificates Button */}
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => scrollToSection("#about")}
+                className={`border-primary/30 hover:bg-primary hover:text-primary-foreground ${
+                  isScrolled ? "text-foreground" : "text-white border-white/30"
                 }`}
               >
-                {item.name}
-                <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-primary scale-x-0 transition-transform hover:scale-x-100" />
-              </motion.button>
-            ))}
-          </motion.div>
+                <Award className="mr-2 h-4 w-4" />
+                Certificates
+              </Button>
+            </motion.div>
+          </div>
 
           {/* Mobile Menu Button */}
           <motion.div
