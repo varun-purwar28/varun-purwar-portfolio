@@ -91,7 +91,7 @@ const Navigation = () => {
               <Button
                 variant="outline"
                 size="sm"
-                onClick={() => scrollToSection("#about")}
+                onClick={() => scrollToSection("#certificates")}
                 className={`border-primary/30 hover:bg-primary hover:text-primary-foreground ${
                   isScrolled ? "text-foreground" : "text-white border-white/30"
                 }`}
