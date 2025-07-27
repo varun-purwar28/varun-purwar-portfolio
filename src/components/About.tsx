@@ -9,7 +9,7 @@ const About = () => {
     { name: "Python", icon: Code, level: "Expert" },
     { name: "Machine Learning", icon: Brain, level: "Expert" },
     { name: "SQL", icon: Database, level: "Advanced" },
-    { name: "Power BI", icon: "/icons/powerbi.svg", level: "Intermediate" },
+    { name: "Power BI", icon: BarChart3, level: "Intermediate" },
   ];
 
   return (
