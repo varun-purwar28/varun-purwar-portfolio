@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Code, Database, BarChart3, Brain } from "lucide-react";
-import profileImage from "@/assets/varun-profile-real.jpg";
+import profileImage from "@/assets/varun-profile-final.jpg";
 
 const About = () => {
   const skills = [
