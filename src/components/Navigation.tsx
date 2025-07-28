@@ -89,12 +89,10 @@ const Navigation = () => {
               transition={{ duration: 0.6, delay: 0.8 }}
             >
               <Button
-                variant="outline"
+                variant="secondary"
                 size="sm"
                 onClick={() => scrollToSection("#certificates")}
-                className={`border-primary/30 hover:bg-primary hover:text-primary-foreground ${
-                  isScrolled ? "text-foreground" : "text-white border-white/30"
-                }`}
+                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-glow"
               >
                 <Award className="mr-2 h-4 w-4" />
                 Certificates
