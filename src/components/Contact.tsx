@@ -82,6 +82,16 @@ const Contact = () => {
             Get In Touch
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8" />
+          <div className="flex justify-center gap-4 mb-6">
+            <a href="https://www.linkedin.com/in/varun-purwar-39a384247/" target="_blank" rel="noopener noreferrer" 
+               className="p-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-colors">
+              <Linkedin className="h-6 w-6" />
+            </a>
+            <a href="https://github.com/varun-purwar28" target="_blank" rel="noopener noreferrer"
+               className="p-3 bg-gray-800 hover:bg-gray-900 text-white rounded-full transition-colors">
+              <Github className="h-6 w-6" />
+            </a>
+          </div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Let's connect and discuss how we can work together on your next data project
           </p>

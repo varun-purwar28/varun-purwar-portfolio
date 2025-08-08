@@ -5,7 +5,7 @@ import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Extracurricular from "@/components/Extracurricular";
 import Certificates from "@/components/Certificates";
-import SupportMe from "@/components/SupportMe";
+import Collaborate from "@/components/Collaborate";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -13,14 +13,14 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main>
+      <main className="pt-16">
         <Hero />
         <About />
         <Projects />
         <Experience />
         <Extracurricular />
         <Certificates />
-        <SupportMe />
+        <Collaborate />
         <Contact />
       </main>
       <Footer />

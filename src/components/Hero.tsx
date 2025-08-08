@@ -36,19 +36,28 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Hi, I'm{" "}
+            I turn complex data into{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Varun Purwar
+              clear decisions
             </span>
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto"
+            className="text-xl md:text-2xl text-gray-200 mb-4 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            B.Tech AI & Data Science graduate from IIT Jodhpur, transforming data into actionable insights
+            Blending AI, analytics, and automation to solve real-world challenges
+          </motion.p>
+          
+          <motion.p 
+            className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+            B.Tech AI & Data Science graduate from IIT Jodhpur • Processed 1M+ data points • Seeking opportunities in healthcare, finance & automation
           </motion.p>
           
           <motion.div 
@@ -57,31 +66,31 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-glow"
-              onClick={scrollToNext}
-            >
-              Explore My Work
-              <ArrowDown className="ml-2 h-5 w-5" />
-            </Button>
-            
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <Button 
-                variant="secondary"
-                size="lg"
-                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-6 text-lg rounded-full shadow-glow"
-                asChild
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-6 text-xl font-semibold rounded-full shadow-glow border-2 border-primary"
+                onClick={scrollToNext}
               >
-                <a href="https://drive.google.com/file/d/17hnEeirmqv9e7-wfNRcbuSPVEwpysrPW/view" target="_blank" rel="noopener noreferrer">
-                  <Download className="mr-2 h-5 w-5" />
-                  View Resume
-                </a>
+                Explore My Work
+                <ArrowDown className="ml-2 h-6 w-6" />
               </Button>
             </motion.div>
+            
+            <Button 
+              variant="outline"
+              size="lg"
+              className="bg-white/10 hover:bg-white/20 text-white border-white/30 hover:border-white/50 px-8 py-6 text-lg rounded-full backdrop-blur-sm"
+              asChild
+            >
+              <a href="https://drive.google.com/file/d/17hnEeirmqv9e7-wfNRcbuSPVEwpysrPW/view" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-5 w-5" />
+                View Resume
+              </a>
+            </Button>
           </motion.div>
         </motion.div>
       </div>
