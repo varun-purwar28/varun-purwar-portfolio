@@ -157,37 +157,13 @@ const Contact = () => {
             className="space-y-6"
           >
             <div className="mb-8">
-              <div className="flex items-center space-x-4 mb-4">
-                <Button 
-                  variant="outline" 
-                  size="sm"
-                  className="hover:bg-primary hover:text-primary-foreground"
-                  asChild
-                >
-                  <a href="https://www.linkedin.com/in/varun-purwar-39a384247/" target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="mr-2 h-4 w-4" />
-                    LinkedIn
-                  </a>
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="sm"
-                  className="hover:bg-primary hover:text-primary-foreground"
-                  asChild
-                >
-                  <a href="https://github.com/varun-purwar28" target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    GitHub
-                  </a>
-                </Button>
-              </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                Let's Collaborate
+                Let's Connect
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                I'm seeking opportunities in data science, AI/ML engineering, and analytics roles. 
-                Open to discussing innovative projects where data can drive meaningful business impact. 
-                Let's connect to explore how we can work together.
+                I'm always open to discussing new opportunities, collaboration on interesting AI/ML projects, 
+                or conversations about data science and artificial intelligence. Feel free to reach out through 
+                any of the channels below.
               </p>
             </div>
 

@@ -42,25 +42,14 @@ const Hero = () => {
             </span>
           </motion.h1>
           
-          <motion.div className="space-y-4 mb-8 max-w-3xl mx-auto">
-            <motion.p 
-              className="text-2xl md:text-3xl text-white font-semibold"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              I turn complex data into clear decisions
-            </motion.p>
-            <motion.p 
-              className="text-lg md:text-xl text-gray-200"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              Blending AI, analytics, and automation to solve real-world challenges. 
-              B.Tech AI & Data Science graduate from IIT Jodhpur with expertise in transforming data into actionable insights.
-            </motion.p>
-          </motion.div>
+          <motion.p 
+            className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            B.Tech AI & Data Science graduate from IIT Jodhpur, transforming data into actionable insights
+          </motion.p>
           
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
@@ -70,7 +59,7 @@ const Hero = () => {
           >
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-6 text-lg rounded-full shadow-glow font-semibold border-2 border-primary hover:border-primary/80 transition-all"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-glow"
               onClick={scrollToNext}
             >
               Explore My Work

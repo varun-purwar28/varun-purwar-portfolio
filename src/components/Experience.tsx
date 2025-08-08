@@ -11,10 +11,10 @@ const Experience = () => {
       location: "Jodhpur, India",
       duration: "May 2024 - Jul 2024",
       description: [
-        "Applied **Python, Pandas, and Statistical Modeling** to process **500k+ biomedical records**, reducing analysis time by **40%**",
-        "Developed **Machine Learning algorithms** for wound healing assessment, improving accuracy by **15%** using computational techniques",
-        "Built **automated data pipelines** ensuring 99.9% accuracy in biomedical data processing and validation",
-        "Collaborated with **research teams** to transform complex datasets into actionable insights for healthcare applications"
+        "Analyzed mouse wound data using statistical and computational techniques",
+        "Developed quantitative models to assess wound healing metrics",
+        "Processed large biomedical datasets ensuring accuracy in results",
+        "Applied data analysis skills to biomedical research applications"
       ]
     }
   ];
