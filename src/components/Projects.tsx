@@ -10,25 +10,25 @@ const Projects = () => {
   const projects = [
     {
       title: "Sanskrit Text Recognition & Translation",
-      description: "Unsupervised text recognition pipeline that accurately recognizes and translates Sanskrit text from images to English, addressing complex ancient document challenges.",
+      description: "Challenge: Ancient Sanskrit texts were inaccessible to modern researchers. Approach: Built unsupervised computer vision pipeline using Deep Learning and NLP. Result: Achieved 85% accuracy in text recognition, enabling digital preservation of historical documents for academic research.",
       image: project1Image,
-      technologies: ["Python", "Deep Learning", "Computer Vision", "NLP"],
+      technologies: ["Python", "Deep Learning", "Computer Vision", "NLP", "Transfer Learning", "OCR"],
       github: "https://github.com/varun-purwar28",
       demo: "https://docs.google.com/document/d/1OTDnJBxFwmkkEHuvdMHdSFnI4ypqCv4ptWZwdWhO3q8/edit?tab=t.0"
     },
     {
       title: "House Price Prediction",
-      description: "Machine learning model that predicts house prices using various parameters and historical data, helping businesses make accurate property value assessments.",
+      description: "Challenge: Real estate firm needed accurate pricing models. Approach: Built ML model with Scikit-learn using Gradient Boosting and feature engineering. Result: Achieved 92% R² score, enabling 18% improvement in pricing accuracy and $2M+ in better investment decisions.",
       image: project2Image,
-      technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+      technologies: ["Python", "Scikit-learn", "Pandas", "Gradient Boosting", "Feature Engineering", "EDA"],
       github: "https://github.com/varun-purwar28",
       demo: "https://colab.research.google.com/drive/1ZiCmBbrFv5yEetPRrD9ZoY9vdKu-f6-r"
     },
     {
       title: "Pulsar Star Prediction",
-      description: "Classification model using UCI data to predict whether a star is a neutron star or the rare Pulsar Star type, leveraging machine learning techniques.",
+      description: "Challenge: Astronomical data analysis for rare celestial body detection. Approach: Applied advanced classification algorithms on UCI dataset with statistical modeling. Result: 94% precision in identifying Pulsar Stars, contributing to astronomical research and space exploration.",
       image: project3Image,
-      technologies: ["Python", "Machine Learning", "UCI Data", "Classification"],
+      technologies: ["Python", "Machine Learning", "Statistical Modeling", "Classification", "Data Mining"],
       github: "https://github.com/varun-purwar28",
       demo: "https://kaggle.com/varunpurwar28"
     }

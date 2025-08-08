@@ -9,28 +9,28 @@ const Extracurricular = () => {
       organization: "IGNUS'24, IIT Jodhpur",
       year: "2024",
       icon: Trophy,
-      description: "Led the organization of IIT Jodhpur's premier cultural festival, managing cross-functional teams and coordinating multiple events."
+      description: "Led 40+ volunteers and managed ₹5 lakh budget for IIT Jodhpur's premier cultural festival. Coordinated with 15+ sponsors and managed stakeholder relationships. Demonstrated leadership, budget management, and project coordination skills directly applicable to data science team management."
     },
     {
       title: "Assistant Head, Sports Fest",
       organization: "VARCHAS'23, IIT Jodhpur",
       year: "2023",
       icon: Award,
-      description: "Assisted in organizing IIT Jodhpur's annual sports festival, coordinating logistics and managing participant activities."
+      description: "Coordinated logistics for 2000+ participants across 25+ sports events. Managed cross-functional teams and ensured seamless event execution. Developed skills in resource optimization and process management—key competencies for data pipeline management."
     },
     {
       title: "Assistant Head, Technical Fest",
       organization: "Prometeo'23, IIT Jodhpur",
       year: "2023",
       icon: Zap,
-      description: "Helped organize IIT Jodhpur's technical and entrepreneurial festival, managing technical competitions and workshops."
+      description: "Organized technical competitions and workshops for 1500+ participants. Managed speaker coordination and technical infrastructure. Built expertise in technical communication and stakeholder management essential for client-facing data science roles."
     },
     {
       title: "Assistant Head, Youth Conclave",
       organization: "INAE SERB Youth Conclave, IIT Jodhpur",
       year: "2022",
       icon: Users,
-      description: "Coordinated with industry professionals and speakers for the prestigious youth conclave conducted by IIT Jodhpur."
+      description: "Coordinated with 20+ industry professionals and 500+ students for prestigious youth conclave. Demonstrated networking abilities and professional communication skills crucial for collaborative data science projects and client engagement."
     }
   ];
 

@@ -37,11 +37,7 @@ const Navigation = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border"
-          : "bg-transparent"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md shadow-lg border-b border-border transition-all duration-300"
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
@@ -72,9 +68,7 @@ const Navigation = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
                   onClick={() => scrollToSection(item.href)}
-                  className={`relative text-sm font-medium transition-colors hover:text-primary ${
-                    isScrolled ? "text-foreground" : "text-white"
-                  }`}
+                  className="relative text-sm font-medium transition-colors hover:text-primary text-foreground"
                 >
                   {item.name}
                   <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-primary scale-x-0 transition-transform hover:scale-x-100" />
@@ -111,7 +105,7 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={isScrolled ? "text-foreground" : "text-white"}
+              className="text-foreground"
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>

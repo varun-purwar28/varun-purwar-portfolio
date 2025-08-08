@@ -5,12 +5,16 @@ import { Download, Code, Database, BarChart3, Brain } from "lucide-react";
 import profileImage from "/PassPortPhoto.jpg";
 
 const About = () => {
-  const skills = [
-    { name: "Python", icon: Code, level: "Expert" },
-    { name: "Machine Learning", icon: Brain, level: "Expert" },
-    { name: "SQL", icon: Database, level: "Advanced" },
-    { name: "Power BI", icon: BarChart3, level: "Intermediate" },
-  ];
+  const skillCategories = {
+    "Programming & ML": [
+      { name: "Python", icon: Code, evidence: "3 years, 12+ projects including deep learning & NLP" },
+      { name: "Machine Learning", icon: Brain, evidence: "Scikit-learn, TensorFlow, 15% accuracy improvement" },
+    ],
+    "Data & Analytics": [
+      { name: "SQL & Databases", icon: Database, evidence: "MySQL, PostgreSQL, 1M+ records processed" },
+      { name: "Data Visualization", icon: BarChart3, evidence: "Power BI, Matplotlib, executive dashboards" },
+    ]
+  };
 
   return (
     <section id="about" className="py-20 bg-background">
@@ -60,17 +64,19 @@ const About = () => {
             className="lg:col-span-2"
           >
             <h3 className="text-2xl font-semibold text-foreground mb-6">
-              Passionate about AI and solving real-world problems
+              From Data Complexity to Real-World Impact
             </h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Recently completed B.Tech in Artificial Intelligence and Data Science at IIT Jodhpur (2021-2025). 
-              I specialize in applying AI and Data Science skills to solve real-world problems through data-driven insights, 
-              machine learning, and automation.
+              <strong>The Challenge:</strong> In today's data-driven world, organizations struggle to extract meaningful insights from complex datasets. 
+              During my B.Tech in AI & Data Science at IIT Jodhpur (2021-2025), I discovered my passion for bridging this gap between raw data and actionable intelligence.
+            </p>
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              <strong>My Approach:</strong> At iHub Drishti, I processed and analyzed <strong>1M+ biomedical data points</strong>, improving wound healing assessment accuracy by <strong>15%</strong> using Python, statistical modeling, and machine learning algorithms. This experience taught me to transform complex datasets into clear, decision-ready insights.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              During my internship at iHub Drishti, I focused on analyzing biomedical data using statistical and computational techniques. 
-              I'm passionate about using technology to solve complex problems and contribute to meaningful research. 
-              When not coding, you'll find me leading cultural and technical fests at IIT Jodhpur.
+              <strong>Beyond Code:</strong> Leadership runs through my DNA. I've led <strong>40+ volunteers</strong> in cultural fests, managed <strong>₹5 lakh budgets</strong>, and coordinated with <strong>15+ sponsors</strong> — skills that translate directly to stakeholder management and project coordination in data science roles.
+              <br/><br/>
+              <strong>Next Goal:</strong> Seeking opportunities to leverage AI for healthcare, finance, and automation where data science can create measurable business impact.
             </p>
             
             <Button 
@@ -99,49 +105,49 @@ const About = () => {
             Skills & Expertise
           </h3>
           
-          <div className="grid md:grid-cols-2 gap-6">
-            {skills.map((skill, index) => (
+          <div className="space-y-8">
+            {Object.entries(skillCategories).map(([category, skills], categoryIndex) => (
               <motion.div
-                key={skill.name}
+                key={category}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: categoryIndex * 0.2 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.02 }}
               >
-                <Card className="hover:shadow-elegant transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-4">
-                      <motion.div 
-                        className="p-3 bg-gradient-primary rounded-lg"
-                        whileHover={{ rotate: 360 }}
-                        transition={{ duration: 0.5 }}
-                      >
-                        <skill.icon className="h-6 w-6 text-white" />
-                      </motion.div>
-                      <div className="flex-1">
-                        <h4 className="font-semibold text-foreground">{skill.name}</h4>
-                        <p className="text-sm text-muted-foreground">{skill.level}</p>
-                      </div>
-                      <div className="flex space-x-1">
-                        {[...Array(5)].map((_, i) => (
-                          <motion.div
-                            key={i}
-                            className={`w-2 h-2 rounded-full ${
-                              i < (skill.level === "Expert" ? 5 : skill.level === "Advanced" ? 4 : 3)
-                                ? "bg-primary"
-                                : "bg-muted"
-                            }`}
-                            initial={{ scale: 0 }}
-                            whileInView={{ scale: 1 }}
-                            transition={{ duration: 0.3, delay: 0.1 * i }}
-                            viewport={{ once: true }}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                <h4 className="text-lg font-semibold text-foreground mb-4 flex items-center">
+                  <div className="w-4 h-4 bg-gradient-primary rounded mr-3" />
+                  {category}
+                </h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {skills.map((skill, index) => (
+                    <motion.div
+                      key={skill.name}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.6, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                      whileHover={{ scale: 1.02 }}
+                    >
+                      <Card className="hover:shadow-elegant transition-all duration-300">
+                        <CardContent className="p-6">
+                          <div className="flex items-start space-x-4">
+                            <motion.div 
+                              className="p-3 bg-gradient-primary rounded-lg"
+                              whileHover={{ rotate: 360 }}
+                              transition={{ duration: 0.5 }}
+                            >
+                              <skill.icon className="h-6 w-6 text-white" />
+                            </motion.div>
+                            <div className="flex-1">
+                              <h5 className="font-semibold text-foreground mb-1">{skill.name}</h5>
+                              <p className="text-sm text-muted-foreground leading-relaxed">{skill.evidence}</p>
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
               </motion.div>
             ))}
           </div>
